@@ -1,0 +1,23 @@
+.number_width
+{
+    margin-top: 2%;
+    margin-left: 20%;
+    width:60%;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.mybtn
+{
+    width:40%;
+}
+.form_number
+{
+ width:10%;
+}
+.form_marks
+{
+   padding-right: 40px;
+}
