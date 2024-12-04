@@ -146,7 +146,7 @@
                 echo "$result";
 
                 ?><br>
-                <button type="submit" class="btn btn-dark mybtn mt-1">Find</button>
+                <button type="submit" class="btn btn-dark mybtn mt-1">Find Age-Group</button>
 
             </div>
         </div>
