@@ -84,7 +84,7 @@
                     $warn_msg = "";
                     $average = "";
                     $total = "";
-                    if (isset($_REQUEST['english'])) {
+                    if (isset($_REQUEST['english']) and isset($_REQUEST['evs']) and isset($_REQUEST['physics']) and isset($_REQUEST['chemistry']) and isset($_REQUEST['math']) ) {
                         $english = $_REQUEST['english'];
                         $evs = $_REQUEST['evs'];
                         $physics = $_REQUEST['physics'];
@@ -92,7 +92,7 @@
                         $math = $_REQUEST['math'];
 
                         if (empty($_REQUEST['english']) or empty($_REQUEST['english']) or empty($_REQUEST['english']) or empty($_REQUEST['english']) or empty($_REQUEST['english'])) {
-                            $warn_msg = "<label style='color:red;'> Enter valid Number!</label>";
+                            echo "<label style='color:red;'> Enter valid Number!</label>";
                         } else {
                             $total = $english + $evs + $physics + $chemistry + $math;
                             $average = ($total / 500) * 100;
@@ -104,9 +104,10 @@
                             } else {
                                 $result = "Fail";
                             }
+                            echo "Total Marks: $total/500 <br> Percentage : $average%";
+                            echo "<br>$result";
                         }
-                        echo "$warn_msg";
-                        echo "$result";
+                       
                     }
 
                     ?><br>
