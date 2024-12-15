@@ -59,29 +59,31 @@
                     <div class="row mb-3">
                         <label for="first_num" class="col-sm-2 col-form-label mt-4">First Number</label>
                         <div class="col-sm-10">
-                            <input type="number" class="form-control mt-4" id="firstnum" name="firstnum" placeholder="Enter Your First Number">
+                            <input type="number" class="form-control mt-4" id="firstnum" required name="firstnum" placeholder="Enter Your First Number">
                         </div>
                     </div>
                     <div class="row mb-3">
                         <label for="second_num" class="col-sm-2 col-form-label">Second Number</label>
                         <div class="col-sm-10">
-                            <input type="number" class="form-control" id="scndnum" name="scndnum" placeholder="Enter Your Second Number">
+                            <input type="number" class="form-control" id="scndnum" required name="scndnum" placeholder="Enter Your Second Number">
                         </div>
                     </div> 
-                    <?php
+                   <br>
+                   <?php
                   if(!empty($result)){
                   echo "$result";
                   }
-                  else{
-                    echo "<label style='color:red;'> Enter valid Number!</label>";
-                  }
-                  ?><br>
+                 
+                    
+                
+                  ?>    <br>
                     <input type="submit" class="btn btn-dark mybtn mt-2" name="add" value="Addition">
                     <input type="submit" class="btn btn-dark mybtn mt-2" name="sub" value="Subtraction">
                     <input type="submit" class="btn btn-dark mybtn mt-2" name="multi" value="Multiplication">
                     <input type="submit" class="btn btn-dark mybtn mt-2" name="div" value="Division">
                     <input type="submit" class="btn btn-dark mybtn mt-2" name="mod" value="Modulus">
                 </form>
+               
             </div>
            
             
